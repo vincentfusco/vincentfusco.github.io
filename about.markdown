@@ -4,7 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Hi, I’m Vincent Fusco, an Analog IC Designer. Alongside my professional work, I also design analog circuits as a hobby using open-source tools. I created this site to document my projects and to help others learn and experiment with open source analog IC design. Whether you’re an experienced professional or an undergrad just getting started, I hope you’ll find valuable resources and articles to support your work and inspire your own projects.
+Hi, I’m Vincent Fusco, a professional analog circuit designer.
 
+I created this site to document my projects and share resources with others interested in building open source analog chips. 
 
-[jekyll-organization]: https://github.com/jekyll
+Whether you're an experienced professional or a student just getting started, I hope you'll find valuable content here to support your learning and spark your own open source projects.
