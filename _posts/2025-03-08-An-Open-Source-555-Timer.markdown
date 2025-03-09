@@ -23,7 +23,7 @@ The actual 5V CMOS version of the 555 schematic is simple and compact, but it wa
 
 The below schematic is the *actual* schematic of the real CMOS 555 timer, published by the late Hans Camenzind himself. His book [is free online](http://www.designinganalogchips.com/).
 
-[![Original CMOS 555 Timer](https://github.com/vincentfusco/tt06_555/blob/main/docs/555_cmos.PNG?raw=true)](https://github.com/vincentfusco/tt06_555/blob/main/docs/555_cmos.PNG?raw=true).
+[![Original CMOS 555 Timer](https://github.com/vincentfusco/tt06_555/blob/main/docs/555_cmos.PNG?raw=true)](https://github.com/vincentfusco/tt06_555/blob/main/docs/555_cmos.PNG?raw=true)
 
 Since cost-per-transistor is cheap and I won't be having to cut Rubylith, I decided to implement it my own way. 
 
@@ -51,7 +51,7 @@ Here is a histogram plotting the measured frequency at TYP:
 
 To get more practice using the tools, I also measured the spread in offset voltage and hysteresis of just the comparator in another Monte Carlo test bench shown below. 
 
-[![Monte Carlo Simulation of Comparator](https://github.com/vincentfusco/tt06_555/blob/main/docs/comp_p_simulations.PNG?raw=true)](https://github.com/vincentfusco/tt06_555/blob/main/docs/comp_p_simulations.PNG?raw=true).
+[![Monte Carlo Simulation of Comparator](https://github.com/vincentfusco/tt06_555/blob/main/docs/comp_p_simulations.PNG?raw=true)](https://github.com/vincentfusco/tt06_555/blob/main/docs/comp_p_simulations.PNG?raw=true)
 
 Although I have plotted a Gaussian curve over top of both plots, the offset voltage looks bimodal, and the hysteresis plot is right skewed. Interesting, and I might have to make a follow up post to discuss why this is later.
 
