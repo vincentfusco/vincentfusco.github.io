@@ -33,7 +33,7 @@ I implemented the comparator using a positive feedback decision circuit sized to
 
 I sized a large NFET as a discharge device, and I put some additional tapered inverters between the SR latch and the discharge FET.
 
-I designed my own logic cells, including the inverters anad SR latch, but the Skywater PDK does come with a standard cell library that I haven't looked into yet.
+I designed my own logic cells, including the inverters and SR latch, but the Skywater PDK does come with a standard cell library that I haven't looked into yet.
 
 [![555 Schematic](https://github.com/vincentfusco/tt06_555/blob/main/docs/timer_core_schematic.PNG?raw=true)](https://github.com/vincentfusco/tt06_555/blob/main/docs/timer_core_schematic.PNG?raw=true)
 
