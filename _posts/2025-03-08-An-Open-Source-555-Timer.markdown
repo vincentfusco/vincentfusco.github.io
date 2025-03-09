@@ -51,7 +51,7 @@ For layout I used Magic. I found [This video](https://www.youtube.com/watch?v=Xv
 
 ## LVS ##
 
-For LVS I used Netgen. ![The tutorials on Tim's site were useful](https://opencircuitdesign.com/netgen/).
+For LVS I used Netgen. I used [the tutorials on Tim's site](https://opencircuitdesign.com/netgen/) and the above video as a reference.
 
 ## Extraction ##
 
