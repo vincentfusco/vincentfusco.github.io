@@ -66,7 +66,7 @@ I followed Tim's layout style, using full guard rings for all analog devices.
 
 I laid out the comparator input-pair in a common-centroid fashion, which you can see annotated on the layout below.
 
-[![Comparator Schematic](https://github.com/vincentfusco/tt06_555/blob/main/docs/comp_p_schem_vs_layout.PNG?raw=true)](https://github.com/vincentfusco/tt06_555/blob/main/docs/comp_p_schem_vs_layout.PNG?raw=true).
+[![Comparator Schematic](https://github.com/vincentfusco/tt06_555/blob/main/docs/comp_p_schem_vs_layout.PNG?raw=true)](https://github.com/vincentfusco/tt06_555/blob/main/docs/comp_p_schem_vs_layout.PNG?raw=true)
 
 I used wide metal for VDD and VSS. I copied Tim's method of "filling" out VSS metal in the local interconnect level between guard rings. I thought his style made for a really clean analog layout.
 
