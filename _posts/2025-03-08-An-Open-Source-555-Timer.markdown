@@ -19,11 +19,11 @@ For schematic capture I used [Xschem](https://sourceforge.net/projects/xschem/).
 
 The actual 5V CMOS version of the 555 schematic is simple and compact, from an era where cost-per-transistor and hand-cutting [Rubylith](https://en.wikipedia.org/wiki/Rubylith) was still a factor:
 
+The below schematic comes from Hans Camenzind's - the creator of the original 555- own book, [which is free online](http://www.designinganalogchips.com/).
+
 ![Original CMOS 555 Timer](https://github.com/vincentfusco/tt06_555/blob/main/docs/555_cmos.PNG?raw=true).
 
-The above schematic comes from Hans Camenzind's own book, [which is free online](http://www.designinganalogchips.com/).
-
-However I wanted to do my own version, and since cost-per-transistor and having to hand cut Rubylith are no longer constraints, I decided to implement it my own way. Xschem does an excellent job supporting hierarchical design. I implemented my comparator using a cross-coupled pair:
+However, cost-per-transistor and having to hand cut Rubylith are no longer constraints, so I decided to implement it my own way. Xschem does an excellent job supporting hierarchical design. Aside from the resistors and discharge FET, I put everything else inside of its own level of hierarchy. I implemented my comparator using a cross-coupled pair:
 
 ![555 Schematic](https://github.com/vincentfusco/tt06_555/blob/main/docs/timer_core_schematic.PNG?raw=true)
 
@@ -31,13 +31,33 @@ However I wanted to do my own version, and since cost-per-transistor and having 
 
 I will write another post specifically about the comparator design.
 
+## Simulation ##
+
+I built a top-level symbol and wired up a testbench where I configured the timer in astable mode. 
+
+I wanted to test out Monte Carlo simulation. With [B. Minch's](https://www.youtube.com/watch?v=fGxs2TnDgrU) excellent YouTube tutorials I was able to figure it out.
+
+Here is a histogram plotting the measured frequency at TYP:
+
+![Monte Carlo Simulation](https://github.com/vincentfusco/tt06_555/blob/main/docs/timer_core_mc_results.png?raw=true)
+
+Pretty cool!
+
 ## Layout ##
+
+For layout I used Magic. I found [This video](https://www.youtube.com/watch?v=XvBpqKwzrFY) extremely useful for learning how to use the tool. In the video Tim Edwards, the creator of Magic, shows you how to lay out an op-amp and he gives some really useful tips.
 
 ![555 Timer Layout](https://github.com/vincentfusco/tt06_555/blob/main/docs/555_layout.png?raw=true)
 
+## LVS ##
+
+For LVS I used Netgen. ![The tutorials on Tim's site were useful](https://opencircuitdesign.com/netgen/).
+
 ## Extraction ##
 
-I extracted an RC netlist from the layout and created the below extracted testbench. 
+I extracted an RC netlist from the layout and created the below testbench. I put an instance of the schematic-only version of the timer next to the RC extracted version of the timer.
+
+I ran a simulation to compare the resulting frequency from each.
 
 ![Extracted Test Bench](https://github.com/vincentfusco/tt06_555/blob/main/docs/tb_tt_um_vaf_555_timer_astable_schematic.PNG?raw=true)
 
