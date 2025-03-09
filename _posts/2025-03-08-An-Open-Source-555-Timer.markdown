@@ -11,7 +11,7 @@ The 555 Timer is perhaps the most iconic IC in hobbyist electronics. [It is also
 
 Wiring up a DIP 8 555 timer on a breadboard in order to blink an LED is a rite-of-passage     — the ["hello world"]( https://en.wikipedia.org/wiki/%22Hello,_World!%22_program) moment for many beginner electronics enthusiasts. For me, my first introduction to PCB design came from [Chris Gammell’s Getting To Blinky](https://contextualelectronics.com/lessons/introduction-to-gtb-5-0/) course and I still have a few of those ubiquitous purple [OshPark]( https://oshpark.com/) PCBs laying around in my parts drawer.
 
-So it seemed fitting as a first experiment with hobbyist IC design to continue the tradition and to, “blink an LED the hard way” while I focusing on learning the open source tools. 
+So it seemed fitting as a first experiment with hobbyist IC design to continue the tradition and to, “blink an LED the hard way” while focusing on learning the open source tools. 
 
 In this post I'll show you my design and point you to the resources I used to learn how to use each tool.
 
