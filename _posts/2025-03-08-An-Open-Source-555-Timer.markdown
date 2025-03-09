@@ -77,17 +77,27 @@ I extracted an RC netlist from the layout and created the below testbench. I put
 
 I ran a simulation to compare the resulting frequency from each.
 
+The top waveforms are the output from the extracted version. 
+
+The bottom waveforms are the output from the schematic version.
+
+Highlighted in yellow are the result of a .MEASURE statement used to measure the time high, time low, and total frequency of each.
+
+You can see that the observed difference in frequency is about 50Hz. Close, but not zero!
+
+The extraction tool lets you extract R-only, C-only, or RC. The results below are for the RC version. It would be interesting to see if this error is present in the R-only or C-only versions.
+
 [![Extracted Test Bench](https://github.com/vincentfusco/tt06_555/blob/main/docs/tb_tt_um_vaf_555_timer_astable_schematic.PNG?raw=true)](https://github.com/vincentfusco/tt06_555/blob/main/docs/tb_tt_um_vaf_555_timer_astable_schematic.PNG?raw=true)
 
 [![Extrated Numerical Simulation Results](https://github.com/vincentfusco/tt06_555/blob/main/docs/tb_tt_um_vaf_555_timer_astable_results.png?raw=true)](https://github.com/vincentfusco/tt06_555/blob/main/docs/tb_tt_um_vaf_555_timer_astable_results.png?raw=true)
 
-The frequency measurement of the simulated schematic and extracted RC netlists match closely, as shown above.
-
 ## Testing ##
 
-Silicon is back! It was delivered on December 12th just in time for Christmas.
+Silicon was delivered on December 12th just in time for Christmas!
 
-[Here is a video of Matt Venn - creator of Tiny Tapeout - testing the 555](https://www.linkedin.com/posts/matt-venn_asic-tinytapeout-opensourcesiliconstream-activity-7293652281994964992-QAga?utm_source=share&utm_medium=member_desktop&rcm=ACoAAA1Ud1sBSTgYI5kdaUC5rC26cc-DA3BvHL4).
+Matt Venn - creator of Tiny Tapeout - put together [this video of his bench top testing of the 555](https://www.linkedin.com/posts/matt-venn_asic-tinytapeout-opensourcesiliconstream-activity-7293652281994964992-QAga?utm_source=share&utm_medium=member_desktop&rcm=ACoAAA1Ud1sBSTgYI5kdaUC5rC26cc-DA3BvHL4).
+
+I still haven't tested the chip myself. I just finished moving and my lab equipment has been in storage, but once I get my lab set up again I will post some scope shots. I may also try to come up with some more ideas for a more thorough comparison of silicon vs. extracted simulation measurements.
 
 ## Conclusion ##
 
