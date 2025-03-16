@@ -17,7 +17,7 @@ The below schematic is the *actual* schematic of the real CMOS 555 timer, publis
 
 [![Original CMOS 555 Timer](https://github.com/vincentfusco/tt06_555/blob/main/docs/555_cmos.PNG?raw=true)](https://github.com/vincentfusco/tt06_555/blob/main/docs/555_cmos.PNG?raw=true)
 
-But, unlike in the era of the original 555, I don't need save on cost-per-transistor and I won't be having to cut Rubylith by hand, I decided to implement the circuit my own way:
+But, unlike in the era of the original 555, we don't need to save on cost-per-transistor and we don't have to worry about cutting Rubylith by hand, so I decided to implement the circuit my own way with a less compact design.
 
 Xschem supports hierarchical design, and aside from the resistors and discharge FET, I put everything else inside of its own level of hierarchy. 
 
