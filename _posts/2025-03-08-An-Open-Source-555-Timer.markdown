@@ -7,13 +7,7 @@ categories: projects
 ---
 ## Introduction ##
 
-The 555 Timer is perhaps the most iconic IC in hobbyist electronics. [It is also the most popular analog chip ever manufactured](https://en.wikipedia.org/wiki/555_timer_IC), with estimates that there are over a billion units still produced annually.
-
-Wiring up a DIP 8 555 timer on a breadboard in order to blink an LED is a rite-of-passage     — the ["hello world"]( https://en.wikipedia.org/wiki/%22Hello,_World!%22_program) moment for many beginner electronics enthusiasts. For me, my first introduction to PCB design came from [Chris Gammell’s Getting To Blinky](https://contextualelectronics.com/lessons/introduction-to-gtb-5-0/) course and I still have a few of those ubiquitous purple [OshPark]( https://oshpark.com/) PCBs laying around in my parts drawer.
-
-So it seemed fitting as a first experiment with hobbyist IC design to continue the tradition and to, “blink an LED the hard way” while focusing on learning the open source tools. 
-
-In this post I'll show you my design and point you to the resources I used to learn how to use each tool.
+In this post, I’ll share how I designed, laid out, and manufactured my own analog chip using open-source tools for a total cost of only $210. 
 
 ## Design ##
 
@@ -98,11 +92,13 @@ The extraction tool lets you extract R-only, C-only, or RC. The results below ar
 
 ## Testing ##
 
-Silicon was delivered on December 12th just in time for Christmas!
+[![Test Board](/pics/555_test_board.jpg)](/pics/555_test_board.jpg)
+
+[![555_test_board](/pics/555_scope.jpg)](/pics/555_scope.jpg)
+
+[![555_blinking_LED.gif](/pics/555_blinking_LED.gif)](/pics/555_blinking_LED.gif)
 
 Matt Venn - creator of Tiny Tapeout - put together [this video of his bench top testing of the 555](https://www.linkedin.com/posts/matt-venn_asic-tinytapeout-opensourcesiliconstream-activity-7293652281994964992-QAga?utm_source=share&utm_medium=member_desktop&rcm=ACoAAA1Ud1sBSTgYI5kdaUC5rC26cc-DA3BvHL4).
-
-I still haven't tested the chip myself. I just finished moving and my lab equipment has been in storage, but once I get my lab set up again I will post some scope shots. I may also try to come up with some more ideas for a more thorough comparison of silicon vs. extracted simulation measurements.
 
 ## Conclusion ##
 
