@@ -13,11 +13,11 @@ In this post, I’ll share how I designed, laid out, and manufactured my own ana
 
 For schematic capture I used [Xschem](https://sourceforge.net/projects/xschem/). To learn the tool I was able to find video tutorials on YouTube. I found [B. Minch's](https://www.youtube.com/watch?v=BpPP2hE_eK8) tutorials really useful and I referenced the [Xschem Manual](https://xschem.sourceforge.io/stefan/xschem_man/xschem_man.html) quite a bit as well.
 
-The below schematic is the *actual* schematic of the real CMOS 555 timer, published by the late Hans Camenzind himself. His book [is free online](http://www.designinganalogchips.com/).
+The below figure is the actual schematic of the original CMOS 555 timer, published by the creator himself, the late Hans Camenzind. His book [is free online](http://www.designinganalogchips.com/).
 
 [![Original CMOS 555 Timer](https://github.com/vincentfusco/tt06_555/blob/main/docs/555_cmos.PNG?raw=true)](https://github.com/vincentfusco/tt06_555/blob/main/docs/555_cmos.PNG?raw=true)
 
-But, unlike in the era of the original 555, we don't need to save on cost-per-transistor and we don't have to worry about cutting Rubylith by hand, so I decided to implement the circuit my own way with a less compact design.
+I wanted to do my own version though, and since unlike in Hans' era I don't need to save on cost-per-transistor or worry about cutting Rubylith by hand, my comparators used a few extra transistors.
 
 Xschem supports hierarchical design, and aside from the resistors and discharge FET, I put everything else inside of its own level of hierarchy. 
 
