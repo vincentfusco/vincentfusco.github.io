@@ -62,7 +62,7 @@ I laid out the comparator input-pair in a common-centroid fashion, which you can
 
 I used wide metal for VDD and VSS. I copied Tim's method of "filling" out VSS metal in the local interconnect level between guard rings. I thought his style made for a really clean analog layout.
 
-The total width of my design was about 45um x 40um.
+The total area of my design was about 45um x 40um.
 
 ## LVS ##
 
