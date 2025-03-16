@@ -108,4 +108,6 @@ Matt Venn - creator of Tiny Tapeout - put together [this video of his bench top 
 
 ## Conclusion ##
 
-This project provided me with a solid foundation in the open-source tool flow. I gained hands-on experience with Xschem, NGSpice, Netgen (LVS), and Magic (layout and DRC). Additionally, I learned to use GitHub and became familiar with the process of delivering GDS to Tiny Tapeout. It was only after completing this project that I decided to start writing about my work, but now that I understand the tool flow and can approach future projects with writing in mind from the start, I’m excited to take on more. One of the most rewarding aspects of open-source chip design is the freedom to share ideas openly, without NDAs, and I look forward to contributing to this collaborative environment in future projects.
+Carl Sagan once said, "To bake an apple pie from scratch you must first create the universe".
+
+And I say, to blink an LED from scratch, creating your own chip is going far enough.
