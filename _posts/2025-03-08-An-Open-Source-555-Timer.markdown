@@ -92,9 +92,15 @@ The extraction tool lets you extract R-only, C-only, or RC. The results below ar
 
 ## Testing ##
 
+I used Tiny Tapeout to manufacture my chip. For $210.00 including shipping they sent me one packaged IC in a QFN mounted on a test PCB shown below:
+
 [![Test Board](/pics/555_test_board.jpg)](/pics/555_test_board.jpg)
 
+I wired up the 555 in astable mode with a frequency low enough for some good LED blinking. The below scope shot shows the comparator switching at 600mV and 1.2V:
+
 [![555_test_board](/pics/555_scope.jpg)](/pics/555_scope.jpg)
+
+Full lab setup below comparing schematic, RC extracted, and bench-top results:
 
 [![555_blinking_LED.gif](/pics/555_blinking_LED.gif)](/pics/555_blinking_LED.gif)
 
